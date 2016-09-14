@@ -1,22 +1,7 @@
 # Javascript Cheat Sheet
-Revision 11
+Revision 12
 
-## PDF Whitepapers
-
-* [ECMA 6th Edition](ECMA-262_6th_edition.pdf) (June 2015)
-* [ECMA 5.1 Edition](ECMA-262_5.1_edition.pdf) (June 2011)
-* [ECMA 5th Edition](ECMA-262_5th_edition.pdf) (December 2009)
-* [ECMA 3rd Edition](ECMA-262_3rd_edition.pdf) (December 1999)
-* [ECMA 2nd Edition](ECMA-262_2nd_edition.pdf) (August 1998)
-* [ECMA 1st Edition](ECMA-262_1st_edition.pdf) (June 1997)
-
-## HTML Standard Homepage
-
-* (June 2016) http://www.ecma-international.org/ecma-262/7.0/
-* (June 2015) http://www.ecma-international.org/ecma-262/6.0/
-* (June 2011) http://www.ecma-international.org/ecma-262/5.1/
-
-## Archived PDFs
+## Archived Javascript Standard PDFs
 
 * http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm
 
@@ -216,8 +201,25 @@ indexOf()           |                         | `var s = "ABC", i = s.indexOf('C
 |                   | (Firefox only)          | `var x = 123           , t = x.toSource();              t;` | "(new Number(123))"   |
 |valueOf()          | n/a                     | `var s = "123"         , t = s.valueOf();               t;` | "123"                 |
 
+# References:
 
-References:
+## PDF Whitepapers
+
+* [ECMA 6th Edition](ECMA-262_6th_edition.pdf) (June 2015)
+* [ECMA 5.1 Edition](ECMA-262_5.1_edition.pdf) (June 2011)
+* [ECMA 5th Edition](ECMA-262_5th_edition.pdf) (December 2009)
+* [ECMA 3rd Edition](ECMA-262_3rd_edition.pdf) (December 1999)
+* [ECMA 2nd Edition](ECMA-262_2nd_edition.pdf) (August 1998)
+* [ECMA 1st Edition](ECMA-262_1st_edition.pdf) (June 1997)
+
+## HTML Standard Homepage
+
+* (June 2016) http://www.ecma-international.org/ecma-262/7.0/
+* (June 2015) http://www.ecma-international.org/ecma-262/6.0/
+* (June 2011) http://www.ecma-international.org/ecma-262/5.1/
+
+## Miscellaneous
+
 * http://stackoverflow.com/questions/586182/how-do-i-insert-an-item-into-an-array-at-a-specific-index
 * http://stackoverflow.com/questions/5767325/remove-a-particular-element-from-an-array-in-javascript
 * http://www.cheatography.com/davechild/cheat-sheets/javascript/pdf/
