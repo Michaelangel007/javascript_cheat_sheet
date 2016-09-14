@@ -1,5 +1,5 @@
 # Javascript Cheat Sheet
-Revision 13
+Revision 14
 
 ## Archived Javascript Standard PDFs
 
@@ -9,10 +9,10 @@ Revision 13
 
 |Functions              | Example                                                                           | Result                          |
 |:----------------------|:----------------------------------------------------------------------------------|:--------------------------------|
-|decodeURI()            | `var e = "www.test.com?foo=%20bar"    , d = decodeURI(s);          d;`            | `"www.test.com?foo= bar"`       |
-|decodeURIComponent()   | `var e = "www.test.com%3Ffoo%3D%20bar", d = decodeURIComponent(s); d;`            | `"www.test.com?foo= bar"`       |
-|encodeURI()            | `var d = "www.test.com?foo= bar"      , e = encodeURI(s);          e;`            | `"www.test.com?foo=%20bar"`     |
-|encodeURIComponent()   | `var d = "www.test.com?foo= bar"      , e = encodeURIComponent(s); e;`            | `"www.test.com%3Ffoo%3D%20bar"` |
+|decodeURI()            | `var e = "www.test.com?foo=%20bar"    , d = decodeURI(e);          d;`            | `"www.test.com?foo= bar"`       |
+|decodeURIComponent()   | `var e = "www.test.com%3Ffoo%3D%20bar", d = decodeURIComponent(e); d;`            | `"www.test.com?foo= bar"`       |
+|encodeURI()            | `var d = "www.test.com?foo= bar"      , e = encodeURI(d);          e;`            | `"www.test.com?foo=%20bar"`     |
+|encodeURIComponent()   | `var d = "www.test.com?foo= bar"      , e = encodeURIComponent(d); e;`            | `"www.test.com%3Ffoo%3D%20bar"` |
 |escape()               | Deprecated in JavaScript version 1.5, use `encodeURI()` or `encodeURIComponent()` |        |
 |eval()                 | `eval( "alert( 'Unsafe Javascript');" );`                                         |        |
 |isFinite()             | `var x = Infinity, b = isFinite( x );    b;`                                      | false  |
