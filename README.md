@@ -1,19 +1,19 @@
 # Javascript Cheat Sheet
 
-|-Global-               | Example                                     | Result |
-|:----------------------|:--------------------------------------------|:-------|
-|decodeURI()            | | |
-|decodeURIComponent()   | | |
-|encodeURI()            | | |
-|encodeURIComponent()   | | |
+|-Global-               | Example                                                                | Result                        |
+|:----------------------|:-----------------------------------------------------------------------|:------------------------------|
+|decodeURI()            | `var e = "www.test.com?foo=%20bar"    , d = decodeURI(s);          d;` | "www.test.com?foo= bar"       |
+|decodeURIComponent()   | `var e = "www.test.com%3Ffoo%3D%20bar", d = decodeURIComponent(s); d;` | "www.test.com?foo= bar"       |
+|encodeURI()            | `var d = "www.test.com?foo= bar"      , e = encodeURI(s);          e;` | "www.test.com?foo=%20bar"     |
+|encodeURIComponent()   | `var d = "www.test.com?foo= bar"      , e = encodeURIComponent(s); e;` | "www.test.com%3Ffoo%3D%20bar" |
 |escape()               | | |
-|eval()                 | `eval( "alert( 'Unsafe Javascript');" );`    |        |
-|isFinite()             | `var x = Infinity, b = isFinite( x );    b;` | false  |
-|isNaN()                | `var x = NaN,      b = isNaN( x );       b;` | true   |
-|Number()               | `var s = "1.23",   n = Number( s );      n;` | 1.23   |
-|parseInt()             | `var x = "0xC0DE", n = parseInt( x,16 ); n;` | 49374  |
-|parseFloat()           | `var s = "1.23",   n = parseFloat( s );  n;` | 1.123  |
-|String()               | `var s = String(1.23);                   s;` | "1.23" |
+|eval()                 | `eval( "alert( 'Unsafe Javascript');" );`                              |        |
+|isFinite()             | `var x = Infinity, b = isFinite( x );    b;`                           | false  |
+|isNaN()                | `var x = NaN,      b = isNaN( x );       b;`                           | true   |
+|Number()               | `var s = "1.23",   n = Number( s );      n;`                           | 1.23   |
+|parseInt()             | `var x = "0xC0DE", n = parseInt( x,16 ); n;`                           | 49374  |
+|parseFloat()           | `var s = "1.23",   n = parseFloat( s );  n;`                           | 1.123  |
+|String()               | `var s = String(1.23);                   s;`                           | "1.23" |
 |unescape()             | | |
 
 # Array
