@@ -79,29 +79,29 @@
 
 # Events
 
-|Events         |
-|:--------------|
-|onabort        |
-|onblur         |
-|onclick        |
-|ondblclick     |
-|ondragdrop     |
-|onerror        |
-|onfocus        |
-|onkeydown      |
-|onkeyup        |
-|onload         |
-|onmousedown    |
-|onmousemouse   |
-|onmouseout     |
-|onmouseover    |
-|onmouseup      |
-|onmove         |
-|onreset        |
-|onresize       |
-|onselect       |
-|onsubmit       |
-|onunload       |
+|Events         | Example |
+|:--------------|:--------|
+|onabort        | |
+|onblur         | |
+|onclick        | |
+|ondblclick     | |
+|ondragdrop     | |
+|onerror        | |
+|onfocus        | |
+|onkeydown      | |
+|onkeyup        | |
+|onload         | &lt;body onload="main();"&gt; |
+|onmousedown    | |
+|onmousemouse   | |
+|onmouseout     | |
+|onmouseover    | |
+|onmouseup      | |
+|onmove         | |
+|onreset        | |
+|onresize       | |
+|onselect       | |
+|onsubmit       | |
+|onunload       | |
 
 # Math
 
