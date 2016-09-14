@@ -1,5 +1,5 @@
 # Javascript Cheat Sheet
-Revision 14
+Revision 15
 
 ## Archived Javascript Standard PDFs
 
@@ -97,29 +97,90 @@ Notes:
 
 # Events
 
+Types of events:
+
+* Animation: `animationend`, `animationiteration`, `animationstart`
+* Clipboard
+* Drag
+* Form
+* Frame
+* Keyboard
+* Media
+* Mouse
+* Object
+* Print
+* Wheel
+
+## Form
+
+|Events         | Example |
+|:--------------|:--------|
+|onblur         | |
+|onchange       | |
+|onfocus        | |
+|oninput        | |
+|onsubmit       | |
+|onselect       | |
+
+## Frame / Object
+
 |Events         | Example |
 |:--------------|:--------|
 |onabort        | |
-|onblur         | |
+|onerror        | |
+|onload         | &lt;body onload="main();"&gt; |
+|onmove         | |
+|onreset        | |
+|onresize       | |
+|onscroll       | |
+|onunload       | |
+
+## Keyboard
+
+|Keyboard Events| Example |
+|:--------------|:--------|
+|onkeydown      | `function onKeyDown(e){ var alt=e.altKey,ctrl=e.ctrlKey,shift=e.shiftKey,key=e.keyCode, console.log(e); } document.body.onkeydown = function(event){ onKeyDown(event); };` |
+|onkeypress     | |
+|onkeyup        | |
+
+Notes:
+
+* Also see: `stopPropagation()`
+
+## Mouse
+
+|Mouse Events   | Example |
+|:--------------|:--------|
 |onclick        | |
+|oncontextmenu  | |
 |ondblclick     | |
 |ondragdrop     | |
-|onerror        | |
-|onfocus        | |
-|onkeydown      | |
-|onkeyup        | |
-|onload         | &lt;body onload="main();"&gt; |
+|onmouseenter   | |
 |onmousedown    | |
+|onmouseleave   | |
 |onmousemove    | `function onMouseMove(e){ var x = e.clientX, y = e.clientY; console.log( x + "," + y ); } document.body.onmousemove = function(event) { onMouseMove(event); };`|
 |onmouseout     | |
 |onmouseover    | |
 |onmouseup      | |
-|onmove         | |
-|onreset        | |
-|onresize       | |
-|onselect       | |
-|onsubmit       | |
-|onunload       | |
+
+## Touch
+
+|Touch Events   | Example |
+|:--------------|:--------|
+| ontouchcancel | |
+| ontouchend    | |
+| ontouchmove   | |
+| ontouchstart  | |
+
+## Wheel (Mouse)
+
+|Wheel Events   | Example |
+|:--------------|:--------|
+|onwheel        | |
+|.deltaMode     | |
+|.deltaX        | |
+|.deltaY        | |
+|.deltaZ        | |
 
 # Math
 
