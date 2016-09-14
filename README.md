@@ -1,6 +1,9 @@
 # Javascript Cheat Sheet
+Revision 7
 
-|-Global-               | Example                                                                | Result                        |
+# Global
+
+|Functions              | Example                                                                | Result                        |
 |:----------------------|:-----------------------------------------------------------------------|:------------------------------|
 |decodeURI()            | `var e = "www.test.com?foo=%20bar"    , d = decodeURI(s);          d;` | `"www.test.com?foo= bar"`       |
 |decodeURIComponent()   | `var e = "www.test.com%3Ffoo%3D%20bar", d = decodeURIComponent(s); d;` | `"www.test.com?foo= bar"`       |
