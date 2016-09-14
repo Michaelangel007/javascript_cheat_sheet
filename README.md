@@ -132,21 +132,30 @@ Javascript is broken:
 * `Math.sin( Math.PI/6 );` returns incorrect `0.49999999999999994` instead of correct `0.5`
 * `Math.tan( Math.PI/2 );` returns incorrect `16331239353195370` instead of correct `Infinity`
 
-|Math.CONSTANT      |
-|:------------------|
-|E                  |
-|LN10               |
-|LN2                |
-|LOG10E             |
-|LOG2E              |
-|MAX_VALUE          |
-|MIN_VALUE          |
-|NaN                |
-|NEGATIVE_INFINITY  |
-|PI                 |
-|POSITIVE_INFINITY  |
-|SQRT1_2            |
-|SQRT2              |
+# Constants
+
+## Math
+
+|Math.                   | Value              |
+|:-----------------------|:-------------------|
+|Math.E                  | 2.718281828459045  |
+|Math.LN10               | 2.302585092994046  |
+|Math.LN2                | 0.6931471805599453 |
+|Math.LOG10E             | 0.4342944819032518 |
+|Math.LOG2E              | 1.4426950408889634 |
+|Math.PI                 | 3.141592653589793  |
+|Math.SQRT1_2            | 0.7071067811865476 |
+|Math.SQRT2              | 1.4142135623730951 |
+
+## Number
+
+|Number.                 | Value                    |
+|:-----------------------|:-------------------------|
+|Number.MAX_VALUE        |  1.7976931348623157e+308 |
+|Number.MIN_VALUE        |  5e-324                  |
+|Number.NaN              |  NaN                     |
+|Number.NEGATIVE_INFINITY| -Infinity                |
+|Number.POSITIVE_INFINITY|  Infinity                |
 
 # String
 
