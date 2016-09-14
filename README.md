@@ -104,7 +104,7 @@ Notes:
 |onkeyup        | |
 |onload         | &lt;body onload="main();"&gt; |
 |onmousedown    | |
-|onmousemouse   | |
+|onmousemove    | |
 |onmouseout     | |
 |onmouseover    | |
 |onmouseup      | |
