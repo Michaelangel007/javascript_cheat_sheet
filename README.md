@@ -5,6 +5,12 @@ Revision 14
 
 * http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm
 
+# Usage
+
+1. New tab, `about:blank`
+2. Right-Click, "Inspect element"
+3. In the `console` tab, copy &amp; paste the 1-liners:
+
 # Global
 
 |Functions              | Example                                                                           | Result                          |
