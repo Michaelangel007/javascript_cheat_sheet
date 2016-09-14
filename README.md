@@ -1,5 +1,24 @@
 # Javascript Cheat Sheet
-Revision 8
+Revision 9
+
+## PDF Whitepapers
+
+* [ECMA 6th Edition](https://raw.githubusercontent.com/Michaelangel007/javascript_cheatsheet/master/ECMA-262_6th_edition.pdf) (June 2015)
+* [ECMA 5.1 Edition](https://raw.githubusercontent.com/Michaelangel007/javascript_cheatsheet/master/ECMA-262_5.1_edition.pdf) (June 2011)
+* [ECMA 5th Edition](https://raw.githubusercontent.com/Michaelangel007/javascript_cheatsheet/master/ECMA-262-5th_edition.pdf) (December 2009)
+* [ECMA 3rd Edition](https://raw.githubusercontent.com/Michaelangel007/javascript_cheatsheet/master/ECMA-262_3rd_edition.pdf) (December 1999)
+* [ECMA 2nd Edition](https://raw.githubusercontent.com/Michaelangel007/javascript_cheatsheet/master/ECMA-262_2nd_edition.pdf) (August 1998)
+* [ECMA 1st Edition](https://raw.githubusercontent.com/Michaelangel007/javascript_cheatsheet/master/ECMA-262_1st_edition.pdf) (June 1997)
+
+## HTML Standard Homepage
+
+* (June 2016) http://www.ecma-international.org/ecma-262/7.0/
+* (June 2015) http://www.ecma-international.org/ecma-262/6.0/
+* (June 2011) http://www.ecma-international.org/ecma-262/5.1/
+
+## Archived PDFs
+
+* http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm
 
 # Global
 
