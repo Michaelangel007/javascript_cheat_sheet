@@ -1,5 +1,5 @@
 # Javascript Cheat Sheet
-Revision 12
+Revision 13
 
 ## Archived Javascript Standard PDFs
 
@@ -104,7 +104,7 @@ Notes:
 |onkeyup        | |
 |onload         | &lt;body onload="main();"&gt; |
 |onmousedown    | |
-|onmousemove    | |
+|onmousemove    | `function onMouseMove(e){ var x = e.clientX, y = e.clientY; console.log( x + "," + y ); } document.body.onmousemove = function(event) { onMouseMove(event); };`|
 |onmouseout     | |
 |onmouseover    | |
 |onmouseup      | |
