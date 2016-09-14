@@ -39,8 +39,8 @@
 
 # Date/Time
 
-|Date.         String         | Description | Example |
-|:----------------------|:------------|:--------|
+|Date.                  | Description | Example                |
+|:----------------------|:------------|:-----------------------|
 |Date.now()             | milliseconds| var ms  = Date.now()   |
 |Date.parse()           | dateString  | var ms  = Date.parse( "January 1, 1970" ); |
 |Date()                 | Current date| var now = new Date();  |
