@@ -1,11 +1,11 @@
 # Javascript Cheat Sheet
-Revision 10
+Revision 11
 
 ## PDF Whitepapers
 
 * [ECMA 6th Edition](ECMA-262_6th_edition.pdf) (June 2015)
 * [ECMA 5.1 Edition](ECMA-262_5.1_edition.pdf) (June 2011)
-* [ECMA 5th Edition](ECMA-262-5th_edition.pdf) (December 2009)
+* [ECMA 5th Edition](ECMA-262_5th_edition.pdf) (December 2009)
 * [ECMA 3rd Edition](ECMA-262_3rd_edition.pdf) (December 1999)
 * [ECMA 2nd Edition](ECMA-262_2nd_edition.pdf) (August 1998)
 * [ECMA 1st Edition](ECMA-262_1st_edition.pdf) (June 1997)
