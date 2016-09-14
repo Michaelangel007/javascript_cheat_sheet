@@ -2,10 +2,10 @@
 
 |-Global-               | Example                                                                | Result                        |
 |:----------------------|:-----------------------------------------------------------------------|:------------------------------|
-|decodeURI()            | `var e = "www.test.com?foo=%20bar"    , d = decodeURI(s);          d;` | "www.test.com?foo= bar"       |
-|decodeURIComponent()   | `var e = "www.test.com%3Ffoo%3D%20bar", d = decodeURIComponent(s); d;` | "www.test.com?foo= bar"       |
-|encodeURI()            | `var d = "www.test.com?foo= bar"      , e = encodeURI(s);          e;` | "www.test.com?foo=%20bar"     |
-|encodeURIComponent()   | `var d = "www.test.com?foo= bar"      , e = encodeURIComponent(s); e;` | "www.test.com%3Ffoo%3D%20bar" |
+|decodeURI()            | `var e = "www.test.com?foo=%20bar"    , d = decodeURI(s);          d;` | `"www.test.com?foo= bar"`       |
+|decodeURIComponent()   | `var e = "www.test.com%3Ffoo%3D%20bar", d = decodeURIComponent(s); d;` | `"www.test.com?foo= bar"`       |
+|encodeURI()            | `var d = "www.test.com?foo= bar"      , e = encodeURI(s);          e;` | `"www.test.com?foo=%20bar"`     |
+|encodeURIComponent()   | `var d = "www.test.com?foo= bar"      , e = encodeURIComponent(s); e;` | `"www.test.com%3Ffoo%3D%20bar"` |
 |escape()               | | |
 |eval()                 | `eval( "alert( 'Unsafe Javascript');" );`                              |        |
 |isFinite()             | `var x = Infinity, b = isFinite( x );    b;`                           | false  |
