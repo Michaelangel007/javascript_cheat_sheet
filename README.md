@@ -1,5 +1,5 @@
 # Javascript Cheat Sheet
-Revision 15
+Revision 16
 
 ## Archived Javascript Standard PDFs
 
@@ -290,3 +290,8 @@ indexOf()           |                         | `var s = "ABC", i = s.indexOf('C
 * http://stackoverflow.com/questions/586182/how-do-i-insert-an-item-into-an-array-at-a-specific-index
 * http://stackoverflow.com/questions/5767325/remove-a-particular-element-from-an-array-in-javascript
 * http://www.cheatography.com/davechild/cheat-sheets/javascript/pdf/
+
+## Mouse Events
+
+* http://javascript.info/tutorial/mouse-events
+
