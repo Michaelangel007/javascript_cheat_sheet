@@ -79,7 +79,7 @@ var Base = ( function()
         console.log( "\t_private()" );
     }
 
-    Base.instance = function() // public class funtcion
+    Base.instance = function() // public class function
     {
         // this.dump(); // ERROR: 'this' does not point to an object!
         Base.prototype.dump.call( this ); // 'this' = function Base() {}
