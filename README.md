@@ -59,11 +59,11 @@ Notes:
 
 # Classes
 
-Javascript has _3_ types of functions:
+Javascript has _3_ types of object functions:
 
 |Access  | Function | Example                           |
 |:-------|:---------|:----------------------------------|
-|Private | Class    | function _Private()               |
+|Private | Class    | function _private()               |
 |Public  | Class    | Class.instance = function()       |
 |Public  | Instance | Class.prototype.dump = function() |
 
@@ -74,12 +74,12 @@ var Base = ( function()
 {
     Base.ID = 111; // Class variable
 
-    function _Private()
+    function _private()
     {
         console.log( "\t_private()" );
     }
 
-    Base.Instance = function() // public class funtcion
+    Base.instance = function() // public class funtcion
     {
         // this.dump(); // ERROR: 'this' does not point to an object!
         Base.prototype.dump.call( this ); // 'this' = function Base() {}
