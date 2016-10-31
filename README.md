@@ -95,7 +95,8 @@ var Base = ( function()
     Base.prototype.dump = function()
     {
         console.log( "dump()" );
-        console.log( "\tthis:     " + this );
+        console.log( "\tthis:     " + this                  );
+//      console.log( "\tthis.ID:  " + this.ID               ); // ERROR: can’t use 'this' to access class variable: Base.ID or Derived.ID
         console.log( "\tClass:    " + this.constructor.name ); // "Base" or "Derived"
         console.log( "\tClass.ID: " + this.constructor.ID   ); // Base.ID or Derived.ID, requires <Class>.prototype.constructor
 
