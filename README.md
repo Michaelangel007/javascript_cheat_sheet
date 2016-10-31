@@ -61,11 +61,11 @@ Notes:
 
 Javascript has _3_ types of functions:
 
-|Access  | Function | Example                          |
-|:-------|:---------|:---------------------------------|
-|Private | Class    | function bar()                   |
-|Public  | Class    | Class.foo()                      |
-|Public  | Instance | Class.prototype.qux = function() |
+|Access  | Function | Example                           |
+|:-------|:---------|:----------------------------------|
+|Private | Class    | function _Private()               |
+|Public  | Class    | Class.instance = function()       |
+|Public  | Instance | Class.prototype.dump = function() |
 
 ```
 "use strict";
@@ -74,17 +74,32 @@ var Base = ( function()
 {
     Base.ID = 111; // Class variable
 
+    function _Private()
+    {
+        console.log( "\t_private()" );
+    }
+
+    Base.Instance = function() // public class funtcion
+    {
+        // this.dump(); // ERROR: 'this' does not point to an object!
+        Base.prototype.dump.call( this ); // 'this' = function Base() {}
+    }
+
     function Base() {} // private
 
-    Base.prototype.init = function() // public
+    Base.prototype.init = function() // public instance function
     {
         return this;
     };
 
     Base.prototype.dump = function()
     {
-        console.log( this.constructor.name ); // "Base" or "Derived"
-        console.log( this.constructor.ID   ); // Base.ID or Derived.ID, requires <Class>.prototype.constructor
+        console.log( "dump()" );
+        console.log( "\tthis:     " + this );
+        console.log( "\tClass:    " + this.constructor.name ); // "Base" or "Derived"
+        console.log( "\tClass.ID: " + this.constructor.ID   ); // Base.ID or Derived.ID, requires <Class>.prototype.constructor
+
+        _private();
     };
 
     return Base;
@@ -114,8 +129,11 @@ var Derived = ( function()
 var b = new Base   ().init();
 var d = new Derived().init();
 
-b.dump(); // Base, 111
-d.dump(); // Derived, 222
+//b.instance(); // ERROR: not an object function!
+Base.instance();
+
+b.dump(); // this = [object Object]; Base, 111
+d.dump(); // this = [object Object]; Derived, 222
 ```
 
 
