@@ -34,6 +34,7 @@ Notes:
  * encodeURI(), decodeURI(): except `, / ? : @ & = + $ #`
  * escape(), unescape(): except `* @ - _ + . /`
 
+
 # Array
 
 |Array.     | Example                                                                   | Result         |
@@ -54,6 +55,69 @@ Notes:
 |toString() | `var a = ['a','b','c'],      t = a.toString();                        t;` | "a,b,c"        |
 |unshift()  | `var a = [1,2]   ,           n = a.unshift('A');                  [n,a];` | [3, ["A",1,2]] |
 |valueOf()  | `var a = [1,2,3] ,           b = a.valueOf();                         b;` | [1, 2, 3]      |
+
+
+# Classes
+
+Javascript has _3_ types of functions:
+
+|Access  | Function | Example                          |
+|:-------|:---------|:---------------------------------|
+|Private | Class    | function bar()                   |
+|Public  | Class    | Class.foo()                      |
+|Public  | Instance | Class.prototype.qux = function() |
+
+```
+"use strict";
+
+var Base = ( function()
+{
+    Base.ID = 111; // Class variable
+
+    function Base() {} // private
+
+    Base.prototype.init = function() // public
+    {
+        return this;
+    };
+
+    Base.prototype.dump = function()
+    {
+        console.log( this.constructor.name ); // "Base" or "Derived"
+        console.log( this.constructor.ID   ); // Base.ID or Derived.ID, requires <Class>.prototype.constructor
+    };
+
+    return Base;
+
+})();
+
+var Derived = ( function()
+{
+    Derived.ID = 222;
+
+    Derived.prototype = new Base();
+    Derived.prototype.constructor = Derived; // NOTE: Needed for <Class>.constructor.ID or <Class>.constructor.name
+
+    function Derived() {} // private
+
+    Derived.prototype.init = function() // public
+    {
+        Base.prototype.init.call( this ); // Chain to parent ctor
+
+        return this;
+    };
+
+    return Derived;
+
+})();
+
+var b = new Base   ().init();
+var d = new Derived().init();
+
+b.dump(); // Base, 111
+d.dump(); // Derived, 222
+```
+
 
 # Date/Time
 
