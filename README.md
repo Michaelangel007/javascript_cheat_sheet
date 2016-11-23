@@ -59,7 +59,7 @@ Notes:
 
 Javascript is fundamentally broken:
 
- * `["10","10","10"].map( parseInt );` returns incorrect `[ 10, NaN, 2 ]` instead of correct `[10,10,10]`
+ * `["10","10","10"].map( parseInt );` returns incorrect `[ 10, NaN, 2 ]` instead of correct `[10,10,10]` -- See [Array.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) work around with `Number` instead of `parseInt`
 
 
 # Classes
