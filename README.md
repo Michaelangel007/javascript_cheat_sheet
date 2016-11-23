@@ -43,6 +43,7 @@ Notes:
 |join()     | `var a = ['A','b','1','2'],  t = a.join("-");                         t;` | "A-b-1-2"      |
 |length     | `var a = [1,2,3] ,           n = a.length;                            n;` | 3              |
 |indexOf()  | `var a = [1,2,3] , e = 3,    i = a.indexOf( e );                      i;` | 2              |
+|map()      | `var a = ['10','10','10'],   b = a.map( parseInt );                   b;` | [ 10, NaN, 2 ] | 
 |pop()      | `var a = [1,2,3] ,           e = a.pop();                             e;` | 3              |
 |push()     | `var a = [1,2  ] , e = 3;        a.push( e );                         a;` | [1, 2, 3]      |
 |reverse()  | `var a = [1,2,3];                a.reverse();                         a;` | [3, 2, 1]      |
@@ -55,6 +56,10 @@ Notes:
 |toString() | `var a = ['a','b','c'],      t = a.toString();                        t;` | "a,b,c"        |
 |unshift()  | `var a = [1,2]   ,           n = a.unshift('A');                  [n,a];` | [3, ["A",1,2]] |
 |valueOf()  | `var a = [1,2,3] ,           b = a.valueOf();                         b;` | [1, 2, 3]      |
+
+Notes:
+
+ * `map()` is **broken**
 
 
 # Classes
