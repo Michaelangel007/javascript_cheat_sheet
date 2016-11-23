@@ -43,7 +43,7 @@ Notes:
 |join()     | `var a = ['A','b','1','2'],  t = a.join("-");                         t;` | "A-b-1-2"      |
 |length     | `var a = [1,2,3] ,           n = a.length;                            n;` | 3              |
 |indexOf()  | `var a = [1,2,3] , e = 3,    i = a.indexOf( e );                      i;` | 2              |
-|map()      | `var a = ['10','10','10'],   b = a.map( parseInt );                   b;` | [ 10, NaN, 2 ] | 
+|map()      | `var a = ['10','10','10'],   b = a.map( parseInt );                   b;` | **Broken**     |
 |pop()      | `var a = [1,2,3] ,           e = a.pop();                             e;` | 3              |
 |push()     | `var a = [1,2  ] , e = 3;        a.push( e );                         a;` | [1, 2, 3]      |
 |reverse()  | `var a = [1,2,3];                a.reverse();                         a;` | [3, 2, 1]      |
@@ -57,9 +57,9 @@ Notes:
 |unshift()  | `var a = [1,2]   ,           n = a.unshift('A');                  [n,a];` | [3, ["A",1,2]] |
 |valueOf()  | `var a = [1,2,3] ,           b = a.valueOf();                         b;` | [1, 2, 3]      |
 
-Notes:
+Javascript is fundamentally broken:
 
- * `map()` is **broken**
+ * `["10","10","10"].map( parseInt );` returns incorrect `[ 10, NaN, 2 ]` instead of correct `[10,10,10]`
 
 
 # Classes
@@ -289,12 +289,12 @@ Notes:
 |pow()          | `var x = 2, y = 0.5,   n = Math.pow( x, y );                        n;`| 1.4142...= sqrt(2)|
 |random()       | `var min = 1, max = 10,y = Math.floor((Math.random() * max) + min); y;`| between 1 .. 9 (inclusive) |
 |round()        | `var x =      Math.PI, y =[Math.round( x ),Math.round(x+0.5)];      y;`| [3, 4]            |
-|sin()          | `var x =    Math.PI/6, y = Math.sin( x );                           y;`| (broken)          |
+|sin()          | `var x =    Math.PI/6, y = Math.sin( x );                           y;`| **Broken**        |
 |sqrt()         | `var x =            4, y = Math.sqrt( x );                          y;`| 2                 |
-|tan()          | `var x =    Math.PI/2, y = Math.tan( x );                           y;`| (broken)          |
+|tan()          | `var x =    Math.PI/2, y = Math.tan( x );                           y;`| **Broken**        |
 |valueOf()      | `var x =         1.23, y = x.valueOf();                             y;`| 1.23              |
 
-Javascript is broken:
+Javascript is fundamentally broken:
 
 * `Math.sin( Math.PI/6 );` returns incorrect `0.49999999999999994` instead of correct `0.5`
 * `Math.tan( Math.PI/2 );` returns incorrect `16331239353195370` instead of correct `Infinity`
