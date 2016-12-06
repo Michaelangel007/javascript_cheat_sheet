@@ -62,6 +62,39 @@ Javascript is fundamentally broken:
  * `["10","10","10"].map( parseInt );` returns incorrect `[ 10, NaN, 2 ]` instead of correct `[10,10,10]` -- See [Array.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) work around with `Number` instead of `parseInt`
 
 
+# Canvas
+
+| Category    | Function | Example |
+|:------------|:---------|:--------|
+| Init        | `canvas.getContext( "2d" );`                   | `var canvas = document.getElementById( "canvas" );` <br> `var context = canvas.getContext( "2d" );`                                                                                   |
+| Clear       | `context.clearRect( x, y, width, height );`    | `context.clearRect( 0, 0, canvas.width, canvas.height );`                                                                                                                             |
+| Draw        |                                                | `context.beginPath();` <br> `context.strokeStyle = color;` <br> `  context.moveTo( x0, y0 );` <br> `  context.lineTo( x1, y1 );` <br> `context.stroke();`                             |
+| Line Start  | `context.moveTo( x0, y0 );`                    | `  context.moveTo( x0, y0 );`                                                                                                                                                         |
+| Line End    | `context.lineTo( x1, y1 );`                    | `  context.lineTo( x1, y1 );`                                                                                                                                                         |
+| Filled      | `context.fillRect( x, y, width, height );`     | `context.fillStyle = "#F00";` <br> `context.fillRect( 0, 0, 320, 200 );`                                                                                                              |
+| Text        | `context.fillText(text,x,y,maxWidth);`         | `context.font = nFontSize + sFontName;` <br> `context.textAlign = "left";` <br> `context.fillStyle = "#000";` <br> `context.fillText( "Hello World", 0, 0 );`                         |
+| Text Align  | `context.textAlign = "...";`                   | `context.textAlign = "left";`, <br> `context.textAlign = "center";`, <br> `context.textAlign = "right";`                                                                              |
+| Image Create| `context.createImageData( width, height );`    | `image = context.createImageData( w, h );` <br> `aPixels = image.data;`                                                                                                               |
+| Image Get   | `context.getImageData( x, y, width, height );` | `image = context.getImageData( 0, 0, 320, 256 ); aPixels = image.data`                                                                                                                |
+| Image Set   | `context.putImageData( image, x, y );`         | `context.putImageData( image, 0, 0 );`                                                                                                                                                |
+| Num Pixels  | `image.data.length;`                           | `aPixels = image.data;` <br> `for( var iPixel = 0; iPixel < aPixels.length; iPixel += 4 )` <br> `{ /* ... */ }`                                                                       |
+| Pixel Set   | `image.data[ offset + 0 ] = red;`              | `var iPixel = ((y * image.width) + x) * 4;` <br> ` aPixels[ iPixel + 0 ] = r;` <br> ` aPixels[ iPixel + 1 ] = g;` <br> ` aPixels[ iPixel + 2] = b;` <br> ` aPixels[ iPixel + 3] = a;` |
+| Pixel Get   | `red = image.data[ offset + 0 ];`              | `var iPixel = ((y * image.width) + x) * 4;` <br> ` r = aPixels[ iPixel + 0 ];` <br> ` g = aPixels[ iPixel + 1 ];` <br> ` b = aPixels[ iPixel + 2];` <br> ` a = aPixels[ iPixel + 3];` |
+
+## Legend:
+
+```
+    var sColor    = "#FF0000";
+    var nFontSize = "12px";
+    var sFontName = " verdana, sans-serif";
+
+    // Create canvas programmatically
+    var canvas = document.createElement( "canvas" );
+    canvas.id = "canvas";
+    document.body.appendChild( canvas );
+```
+
+
 # Classes
 
 Javascript has _3_ types of object functions:
