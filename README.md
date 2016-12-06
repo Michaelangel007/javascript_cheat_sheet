@@ -1,7 +1,21 @@
 # Javascript Cheat Sheet
-Revision 16
+Revision 17
 
-## Archived Javascript Standard PDFs
+# Table of Contents
+
+* Javascript Standard (Archived PDFs)
+* Usage
+* Global
+* Array
+* Canvas
+* Classes
+* Date / Time
+* Events
+* Math.
+* String.
+
+
+# Javascript Standard (Archived PDFs)
 
 * http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm
 
@@ -66,7 +80,7 @@ Javascript is fundamentally broken:
 
 | Category    | Function | Example |
 |:------------|:---------|:--------|
-| Init        | `canvas.getContext( "2d" );`                   | `var canvas = document.getElementById( "canvas" );` <br> `var context = canvas.getContext( "2d" );`                                                                                   |
+| Init        | `canvas.getContext( "2d" );`                   | `var canvas  = document.getElementById( "canvas" );` <br> `var context = canvas.getContext( "2d" );`                                                                                   |
 | Clear       | `context.clearRect( x, y, width, height );`    | `context.clearRect( 0, 0, canvas.width, canvas.height );`                                                                                                                             |
 | Draw        |                                                | `context.beginPath();` <br> `context.strokeStyle = color;` <br> `  context.moveTo( x0, y0 );` <br> `  context.lineTo( x1, y1 );` <br> `context.stroke();`                             |
 | Line Start  | `context.moveTo( x0, y0 );`                    | `  context.moveTo( x0, y0 );`                                                                                                                                                         |
