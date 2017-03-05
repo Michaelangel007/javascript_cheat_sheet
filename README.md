@@ -344,7 +344,8 @@ Notes:
 Javascript is fundamentally broken:
 
 * `Math.sin( Math.PI/6 );` returns incorrect `0.49999999999999994` instead of correct `0.5`
-* `Math.tan( Math.PI/2 );` returns incorrect `16331239353195370` instead of correct `Infinity`
+* `Math.tan( Math.PI/2 );` returns incorrect `16331239353195370` instead of correct `NaN` (due to divide by zero)
+* `console.log( 123456789 << 5 );` returns **broken** `-344350048` instead of correct `3950617248`
 
 # Constants
 
