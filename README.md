@@ -374,35 +374,35 @@ Javascript is fundamentally broken:
 
 # String
 
-|String.            | BASIC                   | Example                                                     | Result                |
-|:------------------|:------------------------|:------------------------------------------------------------|:----------------------|
-|charAt()           | MID$( T$, start, start )| `var s = "ABC", c = s.charAt(2);                        c;` | "C"                   |
-|charCodeAt()       | ASC( c$ )               | `var s = "ABC", c = s.charCodeAt(2);                    c;` | 67                    |
-|concat()           | +                       | `var s = "ABC", t = "D";                          t = s+t;` | "ABCD"                |
-|fromCharCode()     | CHR$( n )               | `var s = String.fromCharCode( 65 );                     s;` | "A"                   |
-indexOf()           |                         | `var s = "ABC", i = s.indexOf('C');                     i;` | 2                     |
-|lastIndexOf()      | n/a                     | | |
-|length             | LEN( T$ )               | `var s = "ABC", n = s.length;                           n;` | 3                     |
-|localeCompare()    | n/a                     | | |
-|match()            | n/a                     | | |
-|replace()          | n/a                     | | |
-|search()           | n/a                     | `var s = "ABC"         , t = s.search("C");             t;` | 2                     | 
-|slice()            | n/a                     | `var s = "ABC"         , t = s.slice( 2, 3 );           t;` | "C"                   |
-|split()            | n/a                     | `var s = "A B"         , t = s.split(" ");              t;` |["A",B"]               |
+|String.            | BASIC                           | Example                                                     | Result                |
+|:------------------|:--------------------------------|:------------------------------------------------------------|:----------------------|
+|charAt()           | MID$( T$, start, start )        | `var s = "ABC", c = s.charAt(2);                        c;` | "C"                   |
+|charCodeAt()       | ASC( c$ )                       | `var s = "ABC", c = s.charCodeAt(2);                    c;` | 67                    |
+|concat()           | +                               | `var s = "ABC", t = "D";                          t = s+t;` | "ABCD"                |
+|fromCharCode()     | CHR$( n )                       | `var s = String.fromCharCode( 65 );                     s;` | "A"                   |
+|indexOf()          |                                 | `var s = "ABC", i = s.indexOf('C');                     i;` | 2                     |
+|lastIndexOf()      | n/a                             | `"ABAC".lastIndexOf('A');`                                  | 2                     |
+|length             | LEN( T$ )                       | `var s = "ABC", n = s.length;                           n;` | 3                     |
+|localeCompare()    | n/a                             | | |
+|match()            | n/a                             | | |
+|replace()          | n/a                             | | |
+|search()           | n/a                             | `var s = "ABC"         , t = s.search("C");             t;` | 2                     |
+|slice()            | n/a                             | `var s = "ABC"         , t = s.slice( 2, 3 );           t;` | "C"                   |
+|split()            | n/a                             | `var s = "A B"         , t = s.split(" ");              t;` |["A",B"]               |
 |substr()           | MID$( T$,start,MIN(end,LEN(T$)))| `var s = "ABC"         , t = s.substr(1,2);             t;` | "BC"                  |
-|substring()        | MID$( T$, start, end-1) | `var s = "ABC"         , t = s.substring(1,2);          t;` | "B"                    |
-|toExponential()    | n/a                     | `var x = 299792458     , t = x.toExponential();         t;` | "2.99792458e+8"       |
-|toFixed()          | n/a                     | `var x = Math.PI       , t = x.toFixed( 6 );            t;` | "3.141593"            |
-|toLowerCase()      | n/a                     | `var s = "ABC"         , t = s.toLowerCase();           t;` | "abc"                 |
-|toUpperCase()      | n/a                     | `var s = "abc"         , t = s.toUpperCase();           t;` | "ABC"                 |
-|toLocaleLowerCase()| n/a                     | `var s = "\u00C0\u1E9E", t = s.toLocaleLowerCase();     t;` | "àß"                  |
-|toLocaleUpperCase()| n/a                     | `var s = "\u00E4\u00DF", t = s.toLocaleUpperCase();     t;` | "Àẞ"                  |
-|toPrecision()      | n/a                     | `var x = 1.234,digits=1, y = x.toPrecision( digits+1 ); y;` | "1.2"                 | 
-|toString()         | n/a                     | `var x = 49374,base=16 , t = x.toString( base );        t;` | "c0de"                |
-|toSource()         | (Firefox only)          | `var j = {'key':123}   , t = j.toSource();              t;` | "({key:123})"         |
-|                   | (Firefox only)          | `var s = "123"         , t = s.toSource();              t;` | "(new String("123"))" |           
-|                   | (Firefox only)          | `var x = 123           , t = x.toSource();              t;` | "(new Number(123))"   |
-|valueOf()          | n/a                     | `var s = "123"         , t = s.valueOf();               t;` | "123"                 |
+|substring()        | MID$( T$, start, end-1)         | `var s = "ABC"         , t = s.substring(1,2);          t;` | "B"                   |
+|toExponential()    | n/a                             | `var x = 299792458     , t = x.toExponential();         t;` | "2.99792458e+8"       |
+|toFixed()          | n/a                             | `var x = Math.PI       , t = x.toFixed( 6 );            t;` | "3.141593"            |
+|toLowerCase()      | n/a                             | `var s = "ABC"         , t = s.toLowerCase();           t;` | "abc"                 |
+|toUpperCase()      | n/a                             | `var s = "abc"         , t = s.toUpperCase();           t;` | "ABC"                 |
+|toLocaleLowerCase()| n/a                             | `var s = "\u00C0\u1E9E", t = s.toLocaleLowerCase();     t;` | "àß"                  |
+|toLocaleUpperCase()| n/a                             | `var s = "\u00E4\u00DF", t = s.toLocaleUpperCase();     t;` | "Àẞ"                  |
+|toPrecision()      | n/a                             | `var x = 1.234,digits=1, y = x.toPrecision( digits+1 ); y;` | "1.2"                 |
+|toString()         | n/a                             | `var x = 49374,base=16 , t = x.toString( base );        t;` | "c0de"                |
+|toSource()         | (Firefox only)                  | `var j = {'key':123}   , t = j.toSource();              t;` | "({key:123})"         |
+|                   | (Firefox only)                  | `var s = "123"         , t = s.toSource();              t;` | "(new String("123"))" |
+|                   | (Firefox only)                  | `var x = 123           , t = x.toSource();              t;` | "(new Number(123))"   |
+|valueOf()          | n/a                             | `var s = "123"         , t = s.valueOf();               t;` | "123"                 |
 
 # References:
 
