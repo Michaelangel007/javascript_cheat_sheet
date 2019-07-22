@@ -389,8 +389,8 @@ indexOf()           |                         | `var s = "ABC", i = s.indexOf('C
 |search()           | n/a                     | `var s = "ABC"         , t = s.search("C");             t;` | 2                     | 
 |slice()            | n/a                     | `var s = "ABC"         , t = s.slice( 2, 3 );           t;` | "C"                   |
 |split()            | n/a                     | `var s = "A B"         , t = s.split(" ");              t;` |["A",B"]               |
-|substr()           | MID$( T$, start, end )  | `var s = "ABC"         , t = s.substr(1,2);             t;` | "BC"                  |
-|substring()        | see MID$()              | `var s = "ABC"         , t = s.substr(1,2);             t;` | "BC                   |
+|substr()           | MID$( T$,start,MIN(end,LEN(T$)))| `var s = "ABC"         , t = s.substr(1,2);             t;` | "BC"                  |
+|substring()        | MID$( T$, start, end-1) | `var s = "ABC"         , t = s.substring(1,2);          t;` | "B"                    |
 |toExponential()    | n/a                     | `var x = 299792458     , t = x.toExponential();         t;` | "2.99792458e+8"       |
 |toFixed()          | n/a                     | `var x = Math.PI       , t = x.toFixed( 6 );            t;` | "3.141593"            |
 |toLowerCase()      | n/a                     | `var s = "ABC"         , t = s.toLowerCase();           t;` | "abc"                 |
