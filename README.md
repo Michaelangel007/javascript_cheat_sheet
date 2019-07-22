@@ -11,8 +11,8 @@ Revision 17
 * Classes
 * Date / Time
 * Events
-* Math.
-* String.
+* Math
+* String
 
 
 # Javascript Standard (Archived PDFs)
