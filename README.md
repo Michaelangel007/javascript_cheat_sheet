@@ -12,7 +12,7 @@ Revision 17
 * Date / Time
 * Events
 * Math
-* String
+* [String](https://github.com/Michaelangel007/javascript_cheat_sheet#string)
 
 
 # Javascript Standard (Archived PDFs)
@@ -38,7 +38,7 @@ Revision 17
 |isFinite()             | `var x = Infinity, b = isFinite( x );    b;`                                      | false  |
 |isNaN()                | `var x = NaN,      b = isNaN( x );       b;`                                      | true   |
 |Number()               | `var s = "1.23",   n = Number( s );      n;`                                      | 1.23   |
-|parseInt()             | `var x = "0xC0DE", n = parseInt( x,16 ); n;`                                      | 49374  |
+|parseInt()             | `var x = "0xC0DE", n = parseInt( x,16 ); n;`                                      | 49374  // Hex String to Decimal |
 |parseFloat()           | `var s = "1.23",   n = parseFloat( s );  n;`                                      | 1.123  |
 |String()               | `var s = String(1.23);                   s;`                                      | "1.23" |
 |unescape()             | Deprecated in JavaScript version 1.5, use `decodeURI()` or `decodeURIComponent()` |        |
@@ -341,6 +341,11 @@ Notes:
 |tan()          | `var x =    Math.PI/2, y = Math.tan( x );                           y;`| **Broken**        |
 |valueOf()      | `var x =         1.23, y = x.valueOf();                             y;`| 1.23              |
 
+Notes:
+
+* For decimal -> hex conversion use: `hex$ = n.toString(16)`
+* For hex -> decimal conversion use: `n = parseInt( hex$ )`
+
 Javascript is fundamentally broken:
 
 * `Math.sin( Math.PI/6 );` returns incorrect `0.49999999999999994` instead of correct `0.5`
@@ -407,7 +412,8 @@ Javascript is fundamentally broken:
 |toLocaleLowerCase()     | n/a                             | `var s = "\u00C0\u1E9E", t = s.toLocaleLowerCase();     t;` | "àß"                  |
 |toLocaleUpperCase()     | n/a                             | `var s = "\u00E4\u00DF", t = s.toLocaleUpperCase();     t;` | "Àẞ"                  |
 |toPrecision()           | n/a                             | `var x = 1.234,digits=1, y = x.toPrecision( digits+1 ); y;` | "1.2"                 |
-|toString()              | n/a                             | `var x = 49374,base=16 , t = x.toString( base );        t;` | "c0de"                |
+|toString()              | n/a                             | `var x = 49374         , t = x.toString()               t;` | "49374" // decimal    |
+|toString( base )        | n/a                             | `var x = 49374,base=16 , t = x.toString( base );        t;` | "c0de" // hex         |
 |toSource()              | (Firefox only)                  | `var j = {'key':123}   , t = j.toSource();              t;` | "({key:123})"         |
 |                        | (Firefox only)                  | `var s = "123"         , t = s.toSource();              t;` | "(new String("123"))" |
 |                        | (Firefox only)                  | `var x = 123           , t = x.toSource();              t;` | "(new Number(123))"   |
